@@ -1,0 +1,139 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+/* VARIABLES */
+$primary-color: darkblue;
+$warning-color: red;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.header {
+    background: $primary-color;
+    padding: 15px 10px;
+    color: white;
+}
+
+.project-name {
+    float: right;
+}
+
+.form-container {
+    margin-top: 60px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+.form-row {
+    margin-bottom: 30px;
+}
+
+.button {
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    text-align: center;
+    border: none;
+
+    &:focus {
+        outline: none; 
+    }
+}
+
+.error {
+    color: $warning-color;
+    margin-top: 15px
+}
+
+label {
+    color: $primary-color;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+form {
+    margin-top: 100px;
+}
+
+.redirectContainer {
+    position: relative;
+    text-align: center;
+    
+    .confirmation {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin-top: 20%;
+    }
+}
+
+.lastName {
+    padding-left: 10%;
+}
+
+.send-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-input {
+    padding: 10px;
+}
+
+.fail {
+    background: $warning-color;
+    color: white;
+    padding: 14px 20px 1px 20px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+
+    p {
+        font-weight: bold;
+    }        
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 600px) {
+    .col-sm-6 {
+        width: 50%;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+ 
+    form {
+        margin-top: 40px
+    }
+
+    .project-name {
+        float: none
+    }
+
+    .form-container {
+        margin-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .send-container {
+        margin-top: 0px;
+    }    
+}
+
+
